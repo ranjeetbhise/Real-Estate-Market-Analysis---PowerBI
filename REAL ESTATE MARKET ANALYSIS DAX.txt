@@ -1,0 +1,36 @@
+REAL ESTATE MARKET ANALYSIS
+DAX MEASURES
+===========================
+
+1. Total Sales
+
+Total Sales =
+SUM(PropertySales[SalesAmount])
+
+
+2. Total Properties Sold
+
+Total Properties Sold =
+COUNTROWS(PropertySales)
+
+
+3. Average Property Price
+
+Average Property Price =
+AVERAGE(PropertySales[SalesAmount])
+
+
+4. Total Property Area
+
+Total Property Area =
+SUM(PropertySales[PropertyAreaSqFt])
+
+
+5. Average Price per Sq Ft
+
+Average Price per Sq Ft =
+DIVIDE(
+    [Total Sales],
+    [Total Property Area],
+    0
+)
